@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+html {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+}
+
+/* Styles for card */
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 250px;
+  height: 450px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.card__picture img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.card__picture .overlay {
+  width: 250px;
+  height: 250px;
+  background: hsla(178, 100%, 50%, 0.6) url(../images/icon-view.svg) no-repeat
+    center;
+  opacity: 0;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.card__picture:hover .overlay {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.card__header a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card__header a:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+}
+
+.card > p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* Styles for text information of the card */
+
+.card .card__ethprice,
+.card .card__daysleft {
+  margin: 8px 0px 8px 0px;
+  display: inline-block;
+}
+
+.card__daysleft {
+  float: right;
+}
+
+.card__ethprice > p,
+.card__daysleft > P {
+  display: inline;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.card__ethprice > img {
+  width: 10px;
+}
+
+.card__daysleft > img {
+  width: 15px;
+}
+
+.card__ethprice {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__daysleft {
+  color: hsl(215, 51%, 70%);
+}
+
+.card > hr {
+  border: 0.1px solid hsl(215, 32%, 27%);
+}
+
+/* Styles for autor's section */
+
+.card .card__autor {
+  margin: 0;
+}
+
+.card .card__autor > img {
+  width: 25px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+
+.card .card__autor > p {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: super;
+  padding-left: 10px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400px;
+}
+
+.card .card__autor .autor {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.card .card__autor a:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+}
